@@ -1,0 +1,18 @@
+.yellow{
+    color:yellow;
+}
+
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.img{
+    background-image: url(../img/img_prova.jpg);
+    width: 400px;
+    height: 400px;
+}

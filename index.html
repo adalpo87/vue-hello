@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+        <input type="text" @keyup.enter="cambiaColore('yellow')" v-model="prova" placeholder="scrivi e premi enter">
+        <Button @click="cambiaColore('red')">Rosso</Button>
+        <button @click="cambiaColore('blue')">Blu</button>
+        <h1 :class="color">{{ prova }}</h1>
+
+        <button @click="inserisciImmagine('img')">Clicca qui per far comparire l'immagine</button>
+        <div :class="carica"></div>
+
+
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
